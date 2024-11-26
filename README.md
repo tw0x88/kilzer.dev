@@ -44,4 +44,4 @@ Die Webseite ist in die folgenden Hauptkomponenten unterteilt:
 
 1. **Repository klonen**:
    ```bash
-   git clone https://github.com/
+   git clone https://github.com/tw0x88/kilzer.dev.git
