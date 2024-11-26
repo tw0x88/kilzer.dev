@@ -1,6 +1,6 @@
 # Manuel Kilzer - Bewerbungswebseite
 
-Dieses Repository enthält den Code für meine persönliche Bewerbungswebseite. Diese Webseite dient dazu, meinen beruflichen Werdegang (bis ca.2025), meine Qualifikationen und bisherigen Projekte zu präsentieren. Sie ist sowohl ein Beispiel meiner Programmierfähigkeiten als auch ein Hilfsmittel, um meine Fähigkeiten als angehender Fachinformatiker für Anwendungsentwicklung zu demonstrieren.
+Dieses Repository enthält den Code für meine persönliche Bewerbungswebseite [Kilzer.dev](http://www.kilzer.dev). Diese Webseite dient dazu, meinen beruflichen Werdegang (bis ca.2025), meine Qualifikationen und bisherigen Projekte zu präsentieren. Sie ist sowohl ein Beispiel meiner Programmierfähigkeiten als auch ein Hilfsmittel, um meine Fähigkeiten als angehender Fachinformatiker für Anwendungsentwicklung zu demonstrieren.
 
 ## Struktur
 
