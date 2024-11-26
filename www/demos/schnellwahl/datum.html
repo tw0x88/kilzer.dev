@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta http-equiv="Refresh" content="20; url=datum.html" />
+		<meta charset="UTF-8">
+		<title>Datum</title>
+		<link rel="stylesheet" href="css/datum.css">
+	</head>
+	<body>
+		<p id="datum">
+			<script type="text/javascript">
+				var now = new Date();
+				var hour_raw = now.getHours();
+				var minute_raw = now.getMinutes();
+
+				if (hour_raw < 10) {
+					var hour = "0" + hour_raw; 
+				}
+
+				else {
+					var hour = hour_raw;
+				}
+
+				if (minute_raw < 10) {
+					var minute = "0" + minute_raw; 
+				}
+
+				else {
+					var minute = minute_raw;
+				}
+				document.write(now.getDate(),'.',now.getMonth()+1,'.',now.getFullYear(),'<br>');
+				document.write(hour,':',minute,' Uhr');
+			</script>
+		</p>
+	</body>
+</html>

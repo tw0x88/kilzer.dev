@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.anchor {
+    scroll-margin-top: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #373c46; /* #fff */
+    padding-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.wrap {
+    display: none;
+}
+  
+.inhalt {
+    background-color: #373c46;    
+    width: 706px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-left: 0px solid black; /* 3px */
+    border-right: 0px solid black; /* 3px */
+    border-bottom: 0px solid black; /* 3px */
+}
+
+header {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 14px;
+}
+
+nav a {
+    margin-top: 20px;
+    font-size: 180%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #29C5F6;
+}
+
+a {
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #29C5F6;
+}
+
+#about img {
+    width: 700px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #29C5F6;
+    font-size: 210%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3),
+                 3px 3px 6px rgba(0, 0, 255, 0.3),
+                 -2px -2px 3px rgba(255, 0, 0, 0.3);
+}
+
+p {
+    font-size: 160%;
+    color: #fff;
+    line-height: 120%;
+    margin: 20px;
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+
+#contact img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    width: 80%;
+    height: 560px;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.list-title {
+    font-size: 160%;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.topic-title {
+    color: #29C5F6;
+    font-size: 160%;
+    font-weight: 600;
+}
+
+.detail-container {
+    margin-left: 18px;
+}
+
+.topic-detail {
+    font-size: 120%;
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 6px;
+    margin-left: 2px;
+    margin-right: 0px;
+}
+
+.topic-detail {
+    color: #FE4716;
+}
+
+.down-link {
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+li p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.textabsatz {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+#contact label{
+    font-size: 140%;
+    color: #373e49;
+    font-weight: bold;
+}
+
+#contact input{
+    height: 50px;
+    width: 80%;
+    padding: 6px;
+    border-radius: 7px;
+    border: none;
+    background-color: #373e49;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.212);
+    color: white;
+    font-size: 150%;
+}
+
+#contact textarea{
+    height: 100px;
+    width: 80%;
+    background-color: #373e49;
+    color: white;
+    border-radius: 7px;
+    font-size: 150%;
+    padding: 6px;
+}
+
+#contact button{
+    height: 80px;
+    width: 50%;
+    background-color: #373e49;
+    color: #29C5F6;
+    border-radius: 7px;
+    font-size: 140%;
+    padding: 6px;    
+}
+
+#contact_answer {
+    margin-top: 60px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+#random-section {
+    margin-top: 60px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+#impressum {
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+#impressum h3 {
+    margin-left: 0;
+}
+
+#impressum h4 {
+    margin-left: 0;
+}
+
+#impressum p {
+    margin-left: 0;
+}
+
+footer {
+    font-size: 14px;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+footer p {
+    margin-left: 7px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #29C5F6;  
+}
+
+.back-to-top {
+    font-size: 200%;
+    margin: 20px;
+    float: right;
+}
+
+.line-numbers {
+    width: 624px;
+}
+
+#rickroll {
+    margin-left: 20px;
+}
+
+.rickroll-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help; /* Ändert den Mauszeiger zu einem Hilfsmittelzeiger */
+  }
+
+.rickroll-tooltip:hover::after {
+    content: "Du fragst dich vielleicht, warum hier ein Video von Rick Astley verlinkt ist. Dies ist ein bekannter Internet-Scherz, der als 'Rickroll' bekannt ist. Es passiert, wenn jemand einen Link zu etwas verspricht, das interessant oder informativ sein soll, aber stattdessen wirst du auf das Musikvideo von Rick Astleys Song 'Never Gonna Give You Up' geleitet. Es ist eine lustige Art, Leute hereinzulegen."; 
+    position: absolute;
+    top: 90%;
+    left: 240px;
+    transform: translateX(-50%);
+    width: 420px; /* Breite des Tooltips anpassen */
+    padding: 10px;
+    background-color: #fff;
+    border: 3px solid #29C5F6;
+    border-radius: 6px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left; /* Text linksbündig ausrichten */
+    white-space: normal; /* Mehrzeiligen Text ermöglichen */
+    visibility: visible; /* Sichtbarkeit bei Hover */
+    opacity: 1; /* Vollständig sichtbar bei Hover */
+    transition: opacity 0.3s ease-in-out; /* Sanfter Übergang bei Hover */
+}
+
+
+#menuToggle {
+    display: none;
+}
+
+#menuList {
+    display: none;
+}
+
+label[for="menuToggle"] {
+    width: 65px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+#menuToggle:checked + label + #menuList {
+    display: block;
+}

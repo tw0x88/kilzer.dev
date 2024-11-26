@@ -1,0 +1,116 @@
+<!doctype html>
+<!-- Browser Linksammlung -->
+<html lang="de">
+<head>
+	<meta name="robots" content="noindex">
+	<meta charset="UTF-8">
+	<meta name="author" content="Manuel Kilzer" />
+	<meta name="copyright" content="Manuel Kilzer" />
+	<link rel="icon" type="image/png" href="bilder/favicon.png">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Schnellwahl</title>
+</head>
+<body>
+	<iframe id="datum" src="datum.html"></iframe> <!--Datum und Uhrzeit mit Javascript in iFrame-->
+
+	<input type="checkbox" id="slider" class="slider">
+	<label for="slider" class="slider-label">
+		<span class="slider-ball"></span>
+	</label>
+
+	<div id="content-off">
+		<p>Freizeit</p>
+	</div>
+	<div id="content-on">
+		<p>Produktiv</p>
+	</div>
+	<div id="google_div">
+		<form class="google_form" method="get" action="http://www.google.de/search" target="_blank">
+			<input id="google_textfeld" onfocus="this.value=''" name="q" type="text" size="60" maxlength="255"/>
+			<input id="google_button" type="submit" value="Google Suche"/>
+		</form>
+	</div>
+	<div class="links_div">
+		<a class="link freizeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/youtube.png" class="link_image"/></a>
+		<a class="link freizeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/netflix.png" class="link_image"/></a>
+		<a class="link freizeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/amazon.png" class="link_image"/></a>
+		<a class="link freizeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/ebay.png" class="link_image"/></a>
+		<a class="link freizeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/ebaykl.png" class="link_image"/></a>
+		<a class="link" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/onedrive.png" class="link_image"/></a>
+		<a class="link" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/gmail.png" class="link_image"/></a>
+		<a class="link" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/yahoo.png" class="link_image"/></a>
+		<a class="link" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/gtranslate.png" class="link_image"/></a>
+		<a class="link freizeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/ntv.png" class="link_image"/></a>
+		<a class="link" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/gpt.png" class="link_image"/></a>
+		<a class="link freizeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/twitter.png" class="link_image"/></a>
+		<a class="link freizeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/insta.png" class="link_image"/></a>
+		<a class="link" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/gmaps.png" class="link_image"/></a>
+		<a class="link" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/gearth.png" class="link_image"/></a>
+		<a class="link arbeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/127001.png" class="link_image"/></a>
+		<a class="link arbeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/udemy.png" class="link_image"/></a>
+		<a class="link freizeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/rb.png" class="link_image"/></a>
+		<a class="link arbeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/gfn.png" class="link_image"/></a>
+		<a class="link arbeit" href="https://www.kilzer.dev/hiergeblieben" target="_blank"><img src="bilder/xing.png" class="link_image"/></a>
+		<a class="link" href="https://www.kilzer.dev" target="_blank"><img src="bilder/dev.png" class="link_image"/></a>
+		<!--
+		<a class="link" href="http://www." target="_blank"><img src="bilder/.png" class="link_image"/></a>
+		-->
+	</div>
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const slider = document.getElementById("slider");
+            const contentOn = document.getElementById("content-on");
+            const contentOff = document.getElementById("content-off");
+			const free_elements = document.getElementsByClassName("freizeit");
+			const work_elements = document.getElementsByClassName("arbeit");
+			const body = document.body;
+
+            slider.addEventListener("change", function() {
+                if (slider.checked) {
+                    contentOn.style.display = "block";
+                    contentOff.style.display = "none";
+					for (let i = 0; i < free_elements.length; i++) {
+						let f_element = free_elements[i];
+						f_element.style.display = "none"
+					}
+					for (let i = 0; i < work_elements.length; i++) {
+						let w_element = work_elements[i];
+						w_element.style.display = "inline-block"
+					}
+					body.style.background = 'linear-gradient(165deg, rgba(0,1,1,1) 3%, rgba(29,253,235,1) 50%, rgba(252,176,69,1) 97%)';
+                } else {
+                    contentOn.style.display = "none";
+                    contentOff.style.display = "block";
+					for (let i = 0; i < free_elements.length; i++) {
+						let f_element = free_elements[i];
+						f_element.style.display = "inline-block"
+					}
+					for (let i = 0; i < work_elements.length; i++) {
+						let w_element = work_elements[i];
+						w_element.style.display = "none"
+					}
+					body.style.background = 'linear-gradient(165deg, rgba(0,1,1,1) 3%, rgba(166,25,6,1) 50%, rgba(158,106,33,1) 97%)';
+                }
+            });
+            if (slider.checked) {
+                contentOn.style.display = "block";
+                contentOff.style.display = "none";
+            } else {
+                contentOn.style.display = "none";
+                contentOff.style.display = "block";
+				for (let i = 0; i < free_elements.length; i++) {
+						let f_element = free_elements[i];
+						f_element.style.display = "inline-block"
+					}
+					for (let i = 0; i < work_elements.length; i++) {
+						let w_element = work_elements[i];
+						w_element.style.display = "none"
+					}
+					body.style.background = 'linear-gradient(165deg, rgba(0,1,1,1) 3%, rgba(166,25,6,1) 50%, rgba(158,106,33,1) 97%)';
+            }
+        });
+    </script>
+	<br>
+	<br>
+</body>
+</html>

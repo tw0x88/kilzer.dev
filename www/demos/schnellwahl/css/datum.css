@@ -1,0 +1,13 @@
+* {
+	padding: 0; 
+	margin: 0; 
+	}
+
+body {
+	overflow: hidden;
+	}
+
+#datum {
+	color: lightgrey;
+	font-family: arial;
+	}
